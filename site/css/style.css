@@ -24692,8 +24692,243 @@ img.mfp-img {
 	background-color: black;
 	width: 368px;
 	height: 420px;
-	opacity: 0.3; 
+	opacity: 0.2; 
 	position: absolute;
 	top: 0px;
+	/* border-radius: 4%; */
 
+}
+
+/* .img1{
+	border-radius: 4%;
+} */
+
+.font{
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+	text-align: center;
+}
+.containerFeedback{
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+.fb-box{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.fback{
+	border: 1.5px solid black;
+	background-color: white;
+	width: 420px;
+	height: 270px;
+
+}
+
+.activee{
+	background-color: #ffc116;
+	width: 18px;    
+	height: 18px;    
+	border-radius: 50%;    
+	list-style: none;    
+	display: inline-block;    
+	margin-right: 4px;
+}
+
+.rattingbar{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.proContent{
+	text-align: left;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 30px;
+}
+
+.nameProContent{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 40px;
+	text-align: left;
+}
+
+.Spam{
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	/* justify-content: center; */
+	margin-top: 70px;
+
+}
+
+#spam1{
+	padding: 0;
+	width: 70px;
+	height: 4px;
+	background-color: #979797;
+	border: none;
+}
+
+#spam2{
+	padding: 0;
+	width: 70px;
+	height: 4px;
+	background-color: #3FD4C9;
+	border: none;
+	margin: 0px 10px
+}
+
+#dancingMan{
+	padding: 0;
+	width: 150px;
+	height: 220px;
+	position: absolute;
+	top: 3170px;
+	left: 1100px;
+}
+
+.preFooter{
+	width: 100%;
+	height: 350px;
+	background-color: #3FD4C9;
+	margin-top: 50px;
+}
+
+.h3Footer{
+	color: white;
+	font-family: inherit;
+	padding-top: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.pFooter{
+	color: white;
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btnFooter{
+	border: none;
+	border-radius: 18px;
+	background-color: #3a3a3a;
+	width: 200px;
+	height: 50px;
+	margin-top: 40px;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+
+}
+
+button:hover{
+	background-color: #fff;
+	color: #3FD4C9;
+}
+
+.allIcon{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 4120px;
+}
+
+.socialIcon{
+	display: flex;
+	justify-content: center;
+	/* width: 40px;
+	height: 40px; */
+}
+
+.circle{
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.circleK{
+	border-radius:50%;
+	background-color: red;
+	width: 60px;
+	height: 60px;
+	margin: 0 10px;
+}
+
+div.circleK:hover{
+	transition: width 1.5s, height 1.5s, transform 1.5s;
+	transform: rotate(180deg);
+
+}
+
+#iconFb{
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	margin: auto;
+	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 15px;
+}
+
+#iconTw{
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	margin: auto;
+	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 15px;
+}
+
+#iconIg{
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	margin: auto;
+	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 15px;
+}
+
+#iconYtb{
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	margin: auto;
+	margin-left: auto;
+ 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 15px;
+}
+
+#bapbenh{
+	width: 350px;
+	height: 450px;
+	margin-top: -350px;
+	margin-right: 900px;
+	/* position: absolute;
+	top: 800000px;
+	left: 100px;
+	z-index: 1; */
 }
