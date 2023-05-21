@@ -13029,7 +13029,7 @@ p.rights a:hover {
 	width: calc(100% + 150px);
 	height: calc(100% + 150px);
 	will-change: transform;
-	animation: bgPos 100s linear infinite;
+	animation: bgPos 40s linear infinite;
 	transform: translate3d(-75px, -75px, 0) rotate(0.001deg);
 	background-position: 50% 50%;
 	background-size: cover;
@@ -24931,4 +24931,25 @@ div.circleK:hover{
 	top: 800000px;
 	left: 100px;
 	z-index: 1; */
+}
+
+#dalat1{
+	width: 420px;
+	height: 228px;
+}
+
+#danang1{
+	width: 420px;
+	height: 228px;
+}
+
+#face1{
+	border-radius: 50%;
+	height: 120px;
+	width: 125px;
+}
+
+.vid{
+	width: 500px;
+	height: 300px;
 }
