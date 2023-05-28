@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>Register</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +57,7 @@
                         <div class="unit-body"><a class="link-phone" href="tel:#">+84 333-999-555</a></div>
                       </div>
                     </li>
-                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#"> Create an account </a>
+                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="./login.html"> Create an account </a>
                 </div>
               </div>
             </div>
@@ -89,24 +89,48 @@
       </header>
 
       <!-- Login section -->
-      <h1 class="loginH1">Login.</h1>
-      <p class="loginp1">Get ready to manage your attraction listing!</p>
+      <h1 class="loginH1">Register.</h1>
+      <p class="loginp1">Sign up and list your attraction for free!</p>
       <div class="loginRow"></div>
 
-      <div class="loginBox">
-        <div class="formEmail">
-          <p class="emailAdress">Email Address <span style="color: #3fd4c9">*</span></p>
-          <input id="email" class="inputEmail" placeholder="Email">
+      <div class="registerBox">
+        
+        <div class="formAcount">
+          <p class="pAccount">Account <span style="color: #3fd4c9">*</span></p>
+          <select class="selectAccount" >
+            <option class="optionRegister">Select Account*</option>
+            <option class="optionRegister">Business</option>
+            <option class="optionRegister">Member</option>
+          </select>
         </div>
+
+        <div class="formGender">
+            <p class="pGender">Gender <span style="color: #3fd4c9">*</span></p>
+            <select class="selectGender">
+              <option class="optionRegister">Select Gender*</option>
+              <option class="optionRegister">Male</option>
+              <option class="optionRegister">Female</option>
+            </select>
+          </div>
+
+          <div class="formEmail">
+            <p class="emailAdress">Email Address <span style="color: #3fd4c9">*</span></p>
+            <input id="email" class="inputEmail" placeholder="Email">
+          </div>
 
         <div class="formPassword">
           <p class="pPassword">Password <span style="color: #3fd4c9">*</span></p>
           <input id="password" class="inputPassword" placeholder="Password" type="password">
         </div>
 
-        <p class="forgotPass">Forgot Password</p>
-        <p class="matAcc">Don't have an account? <a href="./register.html" style="text-decoration: underline; color: #3a3a3a;">Sign up</a></p>
-        <button id="login" class="loginBtn" value="login" name="login">Log in</button>
+        <div class="formconfirmPassword">
+            <p class="pconfirmPassword">Confirm Password <span style="color: #3fd4c9">*</span></p>
+            <input class="inputconfirmPassword" placeholder="Confirm Password" type="password">
+          </div>
+
+            <button id="signUp" class="registerBtn" type="submit">Register</button>
+      
+        
       </div>
 
     </div>
@@ -223,10 +247,8 @@
        <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script type="module" src="js/firebase.js" ></script>
-    <script type="module" src="js/login.js" ></script>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/register.js" ></script>
 
-   
-   
 </body>
 </html>
