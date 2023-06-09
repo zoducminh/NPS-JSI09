@@ -32,6 +32,7 @@ let signUp = document.getElementById('signUp');
         email:email,
       })
       alert('User created!');
+      window.location = "http://127.0.0.1:5500/site/index.html"
       // ...
     })
     .catch((error) => {
