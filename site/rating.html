@@ -26,7 +26,7 @@
         <form action="#">
           <header></header>
           <div class="textarea">
-            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            <textarea cols="30" placeholder="Describe your experience.." id="comment-input"></textarea>
           </div>
           <div class="btn">
             <button type="submit">Post</button>
@@ -34,35 +34,7 @@
         </form>
       </div>
     </div>
-    <script>
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-        } 
-        return false;
-      }
-
-
-      const cmtBtn = document.querySelector(".btn");
-      
-      let bienmoi = document.querySelector('#rate-5')
-            cmtBtn.addEventListener("click", () => {
-              let bienmoi = document.querySelector('#rate-5')
-                const db = getDatabase();
-                update(ref(db, 'users/' + userId), {
-                    comment: bienmoi.value
-                });
-            })
-        
-
-    </script>
+  
 
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
@@ -83,6 +55,35 @@
     const app = initializeApp(firebaseConfig);
     const database = getDatabase(app);
     const auth = getAuth();
+
+    const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+        } 
+        return false;
+      }
+
+
+      const cmtBtn = document.querySelector(".btn");
+      
+      let today = new Date()
+      let time = today.getDate() + '-' + today.getMonth() + '-' + today.getFullYear() + today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds()
+            cmtBtn.addEventListener("click", () => {
+              let bienmoi = document.querySelector('#comment-input')
+              let userId = sessionStorage.getItem('userId')
+                const db = getDatabase();
+                set(ref(db, 'users/' + userId + '/comments/'+time), {
+                    comment: bienmoi.value,
+                    time: time
+                });
+            })
 </script>
   </body>
 </html>
